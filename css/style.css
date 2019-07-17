@@ -1,0 +1,36 @@
+:root {
+    --primary-color: rgb(165, 42, 42);
+    --secondary-color: #ffffff;
+    --primary-text: rgb(66, 66, 66);
+    --header-font-family: 'Impact', sans-serif;
+    --primary-font-family: 'Trebuchet MS', Calibri, Ubuntu, sans-serif;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: solid var(--secondary-color) 1px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 220px;
+    margin: 0px 5%;
+    color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    font-weight: bold;
+    width: 275px;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+}
