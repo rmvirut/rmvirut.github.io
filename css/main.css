@@ -53,6 +53,7 @@ a {
 
 .main {
     display: block;
+    max-width: 80%;
 }
 
 .content {
