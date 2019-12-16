@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fortawesome/fontawesome-free@5.8.1",
-      "/home/kojo/projects/rmvirut.github.io"
+      "/home/dijidev/projects/rmvirut.github.io"
     ]
   ],
   "_from": "@fortawesome/fontawesome-free@5.8.1",
@@ -37,7 +37,7 @@
   "_shasum": "cbafbfe8894c4e3e3c3a9da6774e249ac1f2da8b",
   "_shrinkwrap": null,
   "_spec": "@fortawesome/fontawesome-free@5.8.1",
-  "_where": "/home/kojo/projects/rmvirut.github.io",
+  "_where": "/home/dijidev/projects/rmvirut.github.io",
   "author": {
     "email": "dave@fontawesome.com",
     "name": "Dave Gandy",
