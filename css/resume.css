@@ -83,6 +83,35 @@ p.lead {
   color: #BD5D38;
 }
 
+div#download {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  max-width: 175px;
+  height: 175px;
+  border-radius: 100%;
+  border: 5px #BD5D38 solid;
+  font-size: larger;
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+  color: #000;
+  z-index: 99;
+}
+
+.fa-google-drive,
+.fa-download {
+  color: #BD5D38;
+}
+
+.fa-certificate {
+  color: #dc3545;
+}
+
+.fa-trophy {
+  color: #ffc107;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
@@ -173,6 +202,22 @@ section.resume-section .resume-item .resume-date {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
+}
+
+section#portfolio .carousel-item .carousel-caption {
+  background-color: #BD5D38;
+  color: #fff !important;
+  bottom: 0px;
+  right: 25%;
+  left: 25%;
+}
+
+section#portfolio .carousel-item .carousel-caption h5 {
+  color: #fff;
+}
+
+section#portfolio .carousel-item .carousel-caption a {
+  color: #ffc107;
 }
 
 .bg-primary {

@@ -78,3 +78,34 @@ p.lead {
     }
   }
 }
+
+div#download {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  max-width: 175px;
+  height: 175px;
+  border-radius: 100%;
+  border: 5px $primary solid;
+  font-size: larger;
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+  color: $black;
+  z-index: 99;
+}
+
+.fa-google-drive,
+.fa-download {
+  color: $primary;
+}
+
+.fa-certificate {
+  color: $red;
+}
+
+.fa-trophy {
+  color: $yellow;
+}
+
+

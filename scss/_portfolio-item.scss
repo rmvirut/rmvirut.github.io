@@ -1,0 +1,21 @@
+section#portfolio {
+    .carousel-item {
+        .carousel-caption {
+            background-color: $orange;
+            color: $white !important;
+            bottom: 0px;
+            right: 25%;
+            left: 25%;
+
+            h5 {
+                color: $white;
+                }
+
+            a {
+                color: $yellow;
+            }
+        }
+
+    }
+
+}
