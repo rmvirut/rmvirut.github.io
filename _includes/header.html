@@ -1,14 +1,22 @@
-<header>
+<header class="header-wrapper">
 
   <div class="brand">
-    Kojo Acquah
+    <a href="/">
+      <span class="title">Kojo Acquah</span>
+      <br />
+      <span class="subtitle">IT Consultant</span>
+    </a>
   </div>
 
   <nav>
-
-    {% for item in site.data.nav %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}
-      style="font-weight: bold;" {% endif %}>
-      {{ item.name }} </a> {% endfor %}
+    <ul class="flex-row flex-nav">
+      {% for item in site.data.nav %}
+      <li>
+        <a href="{{ item.link }}" {% if page.url == item.link %}
+          style="font-weight: bold;" {% endif %}>
+          {{ item.name }} </a>
+      </li>
+      {% endfor %}
+    </ul>
   </nav>
 </header>

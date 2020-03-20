@@ -10,18 +10,15 @@ career as an IT Consultant. But I also like to let people know me for more than
 how good I am at analysing and resolving business problems using tech (nice healine, huh?).
 
 I'll start with my name. My name's Kojo Acquah and I was born and raised in Ghana
-but currently reside in Canada as of September 9, 2014. However, since meeting 
-Jesus Christ and having my whole life transformed I like to introduce myself as 
+but currently reside in Canada as of September 9, 2014. However, since meeting
+Jesus Christ and having my whole life transformed I like to introduce myself as
 a man born and raised in Ghana, African by heritage, Canadian on paper (soon),
 Heaven-bound by promise (thank you Jesus) and above all else, a friend of God.
 
-Some might consider this crazy, but I welcome and respect this sentiment and most 
-importantly welcome any and all who would like to hear more of my testimony as 
-a young Chrisitan teen that had his own personal encounter with the Lord. But 
+Some might consider this crazy, but I welcome and respect this sentiment and most
+importantly welcome any and all who would like to hear more of my testimony as
+a young Chrisitan teen that had his own personal encounter with the Lord. But
 enough about that (sadly) and unto me as a professional.
-
-> I was born and raised in Ghana. African by Heritage, Canadian on paper and 
-Heaven-bound by promise. But above all, I am a friend of God.
 
 ## Moving On
 
@@ -30,7 +27,7 @@ fulfilling life, especially regarding the fact that I'm (at the time of publishi
 only 24 years old (born '95). I've met people from around the world thanks to my
 dad's line of work and also gained exposure to even more cultures besides my own
 before and after relocating to Canada. It's pretty exciting. Sadly, I might also
-be on the autism spectrum thus I'm currently looking into seeing a professional 
+be on the autism spectrum thus I'm currently looking into seeing a professional
 at some point
 
 ## The Timeline
@@ -49,7 +46,7 @@ November 2013 - Got admitted into both Saint Mary's University, Halifax and York
 
 Year of 2014 - Enrolled into IPMC to study IT including office applciation & web programming (JavaScript, HTMl, CSS). Got my driver's license and also relocated to Accra temporarily to take SAT's
 
-September 8, 2014 - Hoped unto a KLM flight from Accra Ghana and set of for the land of Maple Syrup, beavers and Mounties. I had decided to go to Saint Mary's University to pursue Computer Science. 
+September 8, 2014 - Hoped unto a KLM flight from Accra Ghana and set of for the land of Maple Syrup, beavers and Mounties. I had decided to go to Saint Mary's University to pursue Computer Science.
 
 September 9, 2014 -  I instantly regret my decision as the Weather changes 5 times in 2 hours. What kind of country is this?
 
