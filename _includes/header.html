@@ -1,0 +1,21 @@
+<header class="header-wrapper row">
+
+  <div class="brand">
+    <a href="/">
+      <span class="title">Kojo Acquah</span><br>
+      <span class="subtitle">IT Consultant</span>
+    </a>
+  </div>
+
+  <nav>
+    <ul class="flex-row flex-nav">
+      {% for item in site.data.nav %}
+      <li>
+        <a href="{{ item.link }}" {% if page.url == item.link %}
+          style="font-weight: bold;" {% endif %}>
+          {{ item.name }} </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
