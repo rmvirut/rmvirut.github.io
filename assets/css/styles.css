@@ -15,13 +15,21 @@ body {
   font-size: large;
 }
 
+section {
+  padding: 1.5rem;
+}
+
+/* HEADER */
+header {
+  margin-bottom: 20px;
+  ;
+}
+
 /* logo/branding */
 
 .brand {
   font-family: var(--header-font, sans-serif);
-  color: var(--primary-color);
-  text-decoration: none;
-  text-transform: none;
+  ;
 }
 
 .title {
@@ -32,6 +40,14 @@ body {
 .subtitle {
   font-size: 30px;
 }
+
+.brand a {
+  text-decoration: none;
+  text-transform: none;
+  color: #980000;
+}
+
+/* end logo/branding */
 
 /* menu/navigation */
 nav ul {
@@ -44,10 +60,22 @@ nav a {
   font-family: var(--seconday-font, sans-serif);
   text-decoration: none;
   text-transform: none;
-  color: var(--primary-color, red);
+  color: #980000;
   margin: auto;
   width: 100%;
   padding: 10px 0px;
+}
+
+/* end menu/navigation */
+/* END HEADER */
+
+.jumbotron {
+  padding: 1.5rem;
+  background: #1EAEDB;
+}
+
+.clear-both {
+  clear: both;
 }
 
 @media screen and (min-width: 1200px) {
