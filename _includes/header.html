@@ -1,21 +1,30 @@
-<header class="header-wrapper row">
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+      <a href="/">
+        <span class="">Kojo Acquah</span><br>
+        <span class="">IT Consultant</span>
+      </a>
+    </div>
 
-  <div class="brand">
-    <a href="/">
-      <span class="title">Kojo Acquah</span><br>
-      <span class="subtitle">IT Consultant</span>
-    </a>
-  </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <nav>
-    <ul class="flex-row flex-nav">
-      {% for item in site.data.nav %}
-      <li>
-        <a href="{{ item.link }}" {% if page.url == item.link %}
-          style="font-weight: bold;" {% endif %}>
-          {{ item.name }} </a>
-      </li>
-      {% endfor %}
-    </ul>
+    <div class="collapse navbar-collapse justify-content-end"
+      id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        {% for item in site.data.nav %}
+        <li class="nav-item">
+          <a href="{{ item.link }}" {% if page.url == item.link %}
+            class="nav-link active" {% else %} class="nav-link" {% endif %}">
+            {{ item.name }} </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </nav>
 </header>

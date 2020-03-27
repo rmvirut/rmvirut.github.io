@@ -9,24 +9,37 @@
   --primary-color: #980000:
 }
 
+main {
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+/* 
 
 body {
   font-family: var(--primary-font, Georgia, 'Times New Roman', Times, serif);
   font-size: large;
 }
 
+
 section {
   padding: 1.5rem;
 }
 
 /* HEADER */
-header {
-  margin-bottom: 20px;
-  ;
-}
+/* header {
+  /* margin-bottom: 20px; */
+
 
 /* logo/branding */
-
+/* 
 .brand {
   font-family: var(--header-font, sans-serif);
   ;
@@ -45,12 +58,12 @@ header {
   text-decoration: none;
   text-transform: none;
   color: #980000;
-}
+} */
 
 /* end logo/branding */
 
 /* menu/navigation */
-nav ul {
+/* nav ul {
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -64,23 +77,23 @@ nav a {
   margin: auto;
   width: 100%;
   padding: 10px 0px;
-}
+} */
 
 /* end menu/navigation */
 /* END HEADER */
 
-.jumbotron {
+/* .jumbotron {
   padding: 1.5rem;
   background: #1EAEDB;
-}
+} */
 
 .clear-both {
   clear: both;
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   body {
     max-width: 75%;
     margin: auto;
   }
-}
+} */
