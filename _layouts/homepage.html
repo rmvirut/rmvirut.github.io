@@ -5,28 +5,14 @@
 
 <body>
 
-  <div class="container">
+  <div class="container-sm">
     {% include header.html %}
     <main>
       <!-- jumbortron goes here -->
-      <div class="jumbotron">
-        <h1>Hi, I'm Kojo</h1>
-        <p>
-          I'm the owner of Diji Domain IT Services, a registerd IT consulting
-          business. It's a side gig for my freetime when I freelance as an IT
-          consultant.
-        </p>
-        <p>
-          I've worked on various IT projects usually with new businesses that
-          need help with IT from web development, hardware recommendation and
-          sourcing to conducting business analysis and proposing solutions.
-        </p>
-        <p>
-          Currently working as a full-time sales associate with the Source Bell
-          Electronics where I peform similar duties but for individuals looking
-          to bring some convenience into their lives with tech.
-        </p>
-
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          {{ content }}
+          </div>
       </div>
 
       <!-- <h2>Recent Posts</h2> -->
@@ -34,7 +20,7 @@
     </main>
     {% include footer.html %}
   </div>
-
+  {% include scripts.html %}
 </body>
 
 </html>
