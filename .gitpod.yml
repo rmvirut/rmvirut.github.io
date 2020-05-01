@@ -1,9 +1,4 @@
 tasks:
-<<<<<<< HEAD
-  - init: ""
-    command: bundle exec jekyll serve
-=======
   - init: bundle exec jekyll serve
->>>>>>> 57087871805a07325e3a027a9776cb80af0f5595
 image:
   file: .gitpod.Dockerfile
