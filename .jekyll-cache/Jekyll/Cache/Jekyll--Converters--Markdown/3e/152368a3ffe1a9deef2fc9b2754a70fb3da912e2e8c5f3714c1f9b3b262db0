@@ -1,131 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+I"�"<p>Tech Stack: Wordpress CMS, WooCommerce, Paypal for Business, Instagram, Square API
+Industry: Retail, Hair and Beauty Products</p>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>In With The New, Welcome to HfxExtensions</title>
-
-  <!-- Featured frameworks and fonts -->
-  <!-- <link rel="stylesheet" href="../assets/css/skeleton-2.0.4/css/normalize.css"/> -->
-  <!-- <link rel="stylesheet" href="../assets/css/skeleton-2.0.4/css/skeleton.css" /> -->
-  <link rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
-    type="text/css">
-
-  <!-- custom styles -->
-  <link rel="stylesheet" href="vendor/css/styles.css" type="text/css" />
-  <link rel="stylesheet" href="vendor/css/grid.css" type="text/css"/>
-</head>
-
-<body>
-
-	<div class="container">
-		<header>
-  <nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
-      <a href="/">
-        <span class="">Kojo Acquah</span><br>
-        <span class="">IT Consultant</span>
-      </a>
-    </div>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end"
-      id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        
-        <li class="nav-item">
-          <a href="/"  class="nav-link" ">
-            Home </a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="/about.html"  class="nav-link" ">
-            About Me </a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="/projects.html"  class="nav-link" ">
-            Portfolio </a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="/contact-me.html"  class="nav-link" ">
-            Let's Chat </a>
-        </li>
-        
-      </ul>
-    </div>
-  </nav>
-</header>
-		<div class="row">
-			<h1 class="col-md-12 text-center">In With The New, Welcome to HfxExtensions</h1>
-			<main class="offset-md-2 col-md-8">
-
-				<!-- header image -->
-				<img class="img-fluid col-md-12" src="/assets/img/600x300.png" />
-
-				<br />
-                
-				<p>
-					<span class="maroon">Tech Stack:</span>
-
-					
-					<!-- <li class="list-inline-item"> -->
-					HTML
-					<!-- </li> -->
-					
-					<!-- <li class="list-inline-item"> -->
-					CSS
-					<!-- </li> -->
-					
-					<!-- <li class="list-inline-item"> -->
-					PHP
-					<!-- </li> -->
-					
-					<!-- <li class="list-inline-item"> -->
-					Wordpress
-					<!-- </li> -->
-					
-					<!-- <li class="list-inline-item"> -->
-					Woocommerce
-					<!-- </li> -->
-					
-					<!-- <li class="list-inline-item"> -->
-					E-Commmerce
-					<!-- </li> -->
-					
-					<!-- <li class="list-inline-item"> -->
-					Web Development
-					<!-- </li> -->
-					
-					<!-- <li class="list-inline-item"> -->
-					Paypal
-					<!-- </li> -->
-					
-					<!-- <li class="list-inline-item"> -->
-					RESTAPI
-					<!-- </li> -->
-					
-
-				</p>
-				
-
-				
-
-				<h2 id="about-the-client">About the Client</h2>
-
-<p>HfxExtensions is the brainchild of Ms Jennifer Kpolu. The business is an upcoming
+<p>About the Client
+HfxExtensions is the brainchild of Ms Jennifer Kpolu. The business is an upcoming
 Halifax-based retailer specialising in hair extensions, both human and artificial. Disclaimer,
 she’s a friend of mine.
 The business has been in operation for roughly 2-3 years, as of writing, and has
@@ -173,34 +50,29 @@ See: Small businesses and self-employed income</li>
 
 <p>Usually I would include the knowledge barrier as another challenge we had to prepare for
 however, thankfully my client was well informed with technology it was a quick walkthrough
-when it came to training.</p>
-
-<h2 id="solution-story">Solution Story</h2>
-
-<p>Wordpress and WooCommerce were the combination that came to mind as the
+when it came to training.
+Solution Story
+Wordpress and WooCommerce were the combination that came to mind as the
 challenges were being outlined. I have experience with Drupal 8 and pre-Adobe magento
 back when it was entirely open source. While magento specializes in creating e-commerce
-experiences, this was a case of using a backhoe for a shovel’s job. Drupal was also a fairly
-tempting option considering I had recently gotten used to the platform and grown rather
+experiences, this was a case of using a backhoe for a shovel’s job. Drupal was also a fairly</p>
+
+<p>tempting option considering I had recently gotten used to the platform and grown rather
 attached to it. However, besides the issue of the learning curve of Drupal &amp; Drupal
 Commerce, the platform was in both the early days and latter days of transitioning from
 Drupal 7 to 8 and then 9 and with no automated upgrade procedure in place, the cost of an
 additional upgrade even from 8 to 9 just wasn’t worth it. But Wordpress had all we wanted
 and none of what we didn’t want;</p>
-
 <ol>
   <li>Fast and easy setup with low-cost entry barrier</li>
   <li>Easy upgrade process between major versions</li>
   <li>WooCommerce extension allows for adding a shopping feature to the website</li>
   <li>Large and diverse extension marketplace</li>
   <li>Large and active community that’s not showing any signs of slowing down</li>
-  <li>Relatively small learning curve</li>
-</ol>
-
-<p>Now with the platform settled on, it came with a lot of features that helped us address
-some of the challenges we encountered.</p>
-
-<p>Wordpress’ only cost of entry, minus developer fees, were hosting and we managed
+  <li>Relatively small learning curve
+Now with the platform settled on, it came with a lot of features that helped us address
+some of the challenges we encountered.
+Wordpress’ only cost of entry, minus developer fees, were hosting and we managed
 to lock in a great deal with one of my recommended hosting providers, HostPapa. For a first
 time online business, this was a great feature that minimized risk to my client’s finances by
 reducing the cost altogether. Besides this, we also opted for the milestone approach for the
@@ -225,15 +97,14 @@ eliminating redundancy across platforms.
 Finally, for payments, we decided on a combination of Paypal and Square’s APIs to
 process payments during transactions. Square was included as a special request from the
 client to process payments both online and in-person including contactless and interac
-during events like expos.</p>
+during events like expos.</li>
+</ol>
 
-<h2 id="results">Results</h2>
-
-<p>As with all my clients, I maintain a close relationship with them and occasionally
+<p>Results
+As with all my clients, I maintain a close relationship with them and occasionally
 check on them occasionally to ensure things are going well and that seems to be the case
 with Hfx.
 This is the impact we’ve had on the business since setting up this website:</p>
-
 <ul>
   <li>Increased reach and, effectively sales, by increasing accessibility to customers</li>
   <li>Comprehensive organization and tracking for transactions and sales volumes.</li>
@@ -243,42 +114,15 @@ real-time inventory updates</li>
   <li>Double-digit percentage increase in revenue due to increased reach and conversion</li>
   <li>Better/improved customer relations management across email and social media
 through detailed product organization, description and FAQ pages to provide more
-info</li>
-</ul>
-
-<p>Within the 45 day deadline, we were able to have a new, mobile-friendly e-commerce
+info
+Within the 45 day deadline, we were able to have a new, mobile-friendly e-commerce
 solution up and running and we managed to get more than just a pretty homepage and some
 products online. HfxExtension is now able to cater to clients across Canada and is still
 working on plans to expand into US markets with time.
 Her bookkeeping headaches are all but gone with Wordpress + Square generating
 invoices and keeping an accurate history of all transactions on and offline. This also works
 great for her clients who now have receipts for every purchase and the ability to order from
-anywhere in Canada, for now.</p>
-
-<blockquote class="blockquote text-right"> “Since I got the website, it’s been easier to manage and they’ve (her clients) been receptive to it.”
-<div class="blockquote-source">- Jennifer Kpolu, Owner</div>
-</blockquote>
-
-
-			</main>
-		</div>
-		
-<footer>
-
-</footer>
-	</div>
-	<!-- importing external scripts before closing body tag -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-  crossorigin="anonymous"></script>
-<script
-  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  crossorigin="anonymous"></script>
-<script
-  src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-  crossorigin="anonymous"></script>
-</body>
-
-</html>
+anywhere in Canada, for now.
+“Since I got the website, it’s been easier to manage and they’ve (her clients)</li>
+</ul>
+:ET

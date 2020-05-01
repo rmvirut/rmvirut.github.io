@@ -30,6 +30,7 @@ before and after relocating to Canada. It's pretty exciting. Sadly, I might also
 be on the autism spectrum thus I'm currently looking into seeing a professional
 at some point
 
+
 ## The Timeline
 
 This is just to showcase where and when I've been in life. I'll add more detail and hopefully style, as time goes on. But enjoy the trip down memory lane.
