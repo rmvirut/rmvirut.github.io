@@ -1,4 +1,5 @@
 tasks:
+commands: bundle install
   - init: bundle exec jekyll serve
 image:
   file: .gitpod.Dockerfile

@@ -9,31 +9,34 @@
 		{% include header.html %}
 		<div class="row">
 			<h1 class="col-md-12 text-center">{{ page.title }}</h1>
+            <br />
 			<main class="offset-md-2 col-md-8">
-
+                <hr>
 				<!-- header image -->
 				<img class="img-fluid col-md-12" src="{{ page.img }}" />
 
 				<br />
-                {% if page.tags.size > 1 %}
+                <br>
+                
+                {% if page.tags.size > 0 %}
 				<p>
-					<span class="maroon">Tech Stack:</span>
+					<span class="maroon">Technologies: </span>
 
 					{% for tag in page.tags %}
 					<!-- <li class="list-inline-item"> -->
-					{{ tag }}
+					{{ tag }},
 					<!-- </li> -->
 					{% endfor %}
 
 				</p>
 				{% endif %}
 
-				{% if page.industry > 1 %}
+				{% if page.industry.size > 0 %}
 				<p>
-					<span class="maroon">Industry</span>
+					<span class="maroon">Industry: </span>
 					{% for industry in page.industry %}
 					<!-- <li class="list-inline-item"> -->
-					{{ industry }}
+					{{ industry }},
 					<!-- </li> -->
 					{% endfor %}
 				</p>
