@@ -2,19 +2,13 @@
 layout: homepage
 title: Home
 ---
-
-# Hi, I'm Kojo
-
+## Hi, I'm Kojo
 I'm the owner of Diji Domain IT Services, the registered name I freelance under.
-I've worked on various IT projects usually with new businesses that need help with IT from web development, hardware recommendation and sourcing to conducting business analysis to propose 
-solutions.
+I've worked on various IT projects usually with new businesses that need help with IT from web development, hardware recommendation and sourcing to conducting business analysis to proposing solutions.
 
-I'm currently working full-time as sales associate with the Source Bell 
-Electronics where I peform similar duties but for individuals looking to bring 
-some convenience into their lives with tech.
+I currently work full-time as sales associate with The Source (Bell 
+Electronics) where I peform duties similar to consulting.
 
-I'm actively looking for new opportunities in any IT related fields or projects.
-And feel free to contact me if you're looking to hire a freelancer for 
-something interesting
+I'm actively seeking to opportunities IT related fields like development or general specialist. Willing to work on contract or on a full-time basis as required.
 
-More About Me: <a href="https://www.linkedin.com/in/kojoacquah/" target="_blank"><span class="fab fa-linkedin fa-2x"></span></a> <a href="https://github.com/rmvirut" target="_blank"><span class="fab fa-github fa-2x"></span></a> <a href="https://codepen.io/rmvirut" target="_blank"><span class="fab fa-codepen fa-2x"></span></a>
+More About Me: <a href="https://www.linkedin.com/in/kojoacquah/" target="_blank" title="LinkedIn Profile"><span class="fab fa-linkedin fa-2x"></span></a>  <a href="https://github.com/rmvirut" target="_blank" title="Github profile"><span class="fab fa-github fa-2x"></span></a> <a href="https://codepen.io/rmvirut" target="_blank" title="Codepen projects"><span class="fab fa-codepen fa-2x"></span></a>      <a href="https://drive.google.com/file/d/1-sBhLJhjIyKc_IL-GpBpHq6b6jpT5DVU/view?usp=sharing" target="_blank" title="Resume"><span class="fas fa-file fa-2x"></span></a>
