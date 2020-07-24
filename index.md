@@ -5,16 +5,6 @@ title: Home
 
 # Hi, I'm Kojo
 
-I'm the owner of Diji Domain IT Services, a registerd IT consulting business. 
-I freelance as an IT consultant. I've worked on various IT projects usually with
- new businesses that need help with IT from web development, hardware 
- recommendation and sourcing to conducting business analysis to propose 
- solutions.
+I'm an IT Consultant/Specialist. That's because I enjoy solving problems and even more so with technology. If a store wants to go into e-commerce, I analyse from all angles how to best pull that off from which system to use (Drupal, Wordpress or Shopify), when to go online and what's the approach to take. If an business's email server is running out of storage, I'll help archive the oldest mails and have a discussion on whether we should expand the capacity and automate the archiving system.
 
-I'm currently working full-time as sales associate with the Source Bell 
-Electronics where I peform similar duties but for individuals looking to bring 
-some convenience into their lives with tech.
-
-I'm actively looking for new opportunities in any IT related fields or projects.
- And feel free to contact me if you're looking to hire a freelancer for 
- something interesting
+Basically, I find everyday business challenges and problems, research and determine what's the best way to overcome them.

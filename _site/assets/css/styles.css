@@ -8,6 +8,7 @@
   --seconday-font: 'Open Sans Condensed';
   --primary-color: #980000:
 }
+
 main {
   margin-top: 1rem;
 }
@@ -19,6 +20,7 @@ h1 {
 h2 {
   font-size: 1.75rem;
 }
+
 /* 
 
 body {
