@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap');
+
+:root {
+  --header-font: 'Pathway Gothic One';
+  --primary-font: 'Merriweather';
+  --seconday-font: 'Open Sans Condensed';
+}
+
+main {
+  margin-top: 1rem;
+}
+
+.maroon {
+    color: #800000;
+}
+
+/* Custom Typography Classes */
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+.largetext {
+ font-size: x-large;
+}
+
+.smalltext {
+    font-size: small;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.clear-both {
+  clear: both;
+}
+
+

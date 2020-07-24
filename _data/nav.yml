@@ -1,8 +1,8 @@
 - name: Home
   link: /
-- name: About Me
-  link: /about.html
-- name: Projects
+# - name: About Me
+#   link: /about.html
+- name: Portfolio
   link: /projects.html
-- name: Contact
+- name: Let's Chat
   link: /contact-me.html
