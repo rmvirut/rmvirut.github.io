@@ -1,0 +1,55 @@
+I"�!<h2 id="about-the-client">About the Client</h2>
+
+<p>Wali Boutique, initially “The Thousand Hills”, is the brainchild of a young international student from Rwanda who wanted to bring the fashion from home to her friends and also to share that culture with North America (and hopefully with the rest of the world). Her name is Adeline Umuwari</p>
+
+<p>Wali Boutique was a small business idea without much capital but in desperate need of a scalable, robust yet affordable e-commerce strategy and solution. She needed to be able to accept payments online yet ensure that her buyers were getting the very best security available to protect their purchases and their information.</p>
+
+<p>At first glance Wali Boutique is a simple e-commerce site that deals in men and women’s fashion and home decor. But upon closer inspection and perhaps meeting with it’s owner and CEO Adeline Umuwari, the brand is about sharing a piece of Rwanda with the world. Formerly known as “The Thousand Hills”, the business has undergone a great deal of transformation and is gradually evolving into a one stop shop for all your needs from Rwanda from jewellery to Kitenge pants and most recently Kalisimbi baskets to decorate your home.</p>
+
+<h2 id="business-challenge">Business Challenge</h2>
+
+<p>Unable to afford a brick and mortar store here in Downtown Halifax, my client was left with e-commerce as her only possible means of sharing Rwandan fashion and decor with North America and eventually the world.</p>
+
+<ul>
+  <li>
+    <p>Novelty/Inexperience: My client was new to both business and the e-commerce experience so the question was: How do I start an entirely web-based business from the ground up?The fact was that it was a first time event for a new business owner, a young lady whose vision had directed her into the world of web development. There was a learning curve to overcome which included processing online orders, responding to customer queries, managing an online presence and finally keeping her online inventory up-to-date with images and all relevant media.</p>
+  </li>
+  <li>
+    <p>Cash: More specifically cashflow was a problem. This business was in its infancy and without a physical store, it would be difficult to raise capital to complete this project. Developing an e-commerce store could cost upwards $20,000 and above. Some more humble estimates of a site this size would be around $1000-$2000. Not to mention subsequent support and maintenance fees associated with keeping something like this online. Not only this but this whole venture would be a risk in itself thus minimizing the cost would be beneficial to her setup bottomline.</p>
+  </li>
+  <li>
+    <p>Brand Awareness/Online Presence: As with every new idea, the word has to get out. In a strange way, people are essentially the true commodity/currency of the 21st century. If you can get their attention, you can then proceed to try to get their money. So without any form of brand awareness or presence in the community, whether online or off, it’s useless to try to start any kind of business because there’s no one to patronise your goods or services.</p>
+  </li>
+  <li>
+    <p>Media &amp; Product Catalogue: The nature of Wali Boutique’s products required a better approach to showcasing the products instead of simple photos taken from a cell phone, at least according to Vogue Business, which speaks about how fashion brands use models to tell their story.</p>
+  </li>
+</ul>
+
+<p>To elaborate more on the “managing an online presence”, based on observation I have found that there was a high risk of good online business ideas taking off wrongly or worse yet never taking off at all simply because they were treated as a simple “web programming/development project” instead of an actual business. However, I made it clear to my client that this should not be the case; we needed to tackle this challenge from both ends i.e. keeping her customers engaged and consistently updated to keep the vision alive while the final product was incubating. In hindsight, using an AGILE approach like SCRUM would’ve been a great way to handle this. Having a great website is awesome, but having actual users and visitors is even better!</p>
+
+<h2 id="solution-stackstory">Solution Stack/Story</h2>
+
+<p>Hopping unto Wordpress and slapping on the next “nicest-looking” e-commerce theme was only a small part of what Wali Boutique needed. More than technology, what I believe my client needed was a strategy to foster growth for the business so we wouldn’t have a dead site by the end of the summer of 2017. We needed both structure and a good foundation in order to get the ball rolling and keep it rolling. I’m never one for shortcuts; do it right or leave it alone till you can.</p>
+
+<p>Most issues related to novelty/Inexperience resolve themselves over time because life happens to us all. The best thing to do is point the person in the right direction. So since this wasn’t a problem we could fix, we decided to tackle the challenge of brand awareness and generating a customer base/interest. Given .  So, after making a humber estimate of what the project would actually cost and finding that it was far beyond what my client had budgeted for the projected, we first</p>
+
+<p>As this was my first e-commerce client, I elected to help her out for a very low cost. I took a chance with her and she took a chance with me (it’s not like she was completely out of options so I’m grateful for this). After a few weeks of conversation taking down the site’s technical and functional requirements, getting the scope of it all we set to work to set up Wali Boutique.com.</p>
+
+<p>First of all, since she was a new entrepreneur I recommended she focus her efforts on building a presence online through social media i.e. facebook and instagram primarily to get brand name out there and determine if there was a market for her while the site was in development. Next step to focus on building relationships and connections with her clients. This way we wouldn’t have to launch a website and then start trying to get visitors. I consider a website no different than a brick and mortar store; before you open a physical store, you first research and gauge your actual demand and people willing to come into the store or at least would be interested in your product. The same principle applies here. The fact that this business was to be entirely web-based didn’t mean lounge-chairs and automated income once the site goes online, although that’s often the hope.</p>
+
+<p>While my client was occupied with this assignment, was to figure out a way to accomplish all the site’s requirements without $20,000 worth of effort and resources. How do I set up a website with inventory management, online payment options, shipping, coupons, promotional and marketing features whilst remaining compliant with all privacy laws, maintaining robust security to keep the site and customer data safe and secure? One word: Opensource.</p>
+
+<p>I stayed away from premium plugins to reduce cost and did the most with all the free but secure and credible plugins the woocommerce team had to offer. I make it a policy not to compromise security in the name of cost and if the feature couldn’t be securely implemented because of money, it was kept on the shelf for later. Through this we were able to get Wali Boutique online and fully functional in a matter of months and business is going great (their words, not mine).</p>
+
+<h2 id="results">Results</h2>
+
+<p>A beautiful, simple yet elegant website that allows my client to showcase their products on their website and provide their customers with a portal to make their purchases. And, it’s also mobile friendly.</p>
+
+<h4 id="worth-mentioning">Worth Mentioning</h4>
+
+<p>I’m a fan of open source software and the efforts to make certain IT tools readily available to those who can’t afford it and as such there are certain name’s worth mentioning to give credit where credit is due.</p>
+
+<p><strong>Let’s Encrypt</strong>: A free SSL service that helped me avoid some steep monthly costs to my client’s web hosting package. Being free doesn’t make it all bad although premium would be ideal. For my less technical audience, this is why https://WaliBoutique.com is considered a safe and secure site in modern browsers. It also helps protect information like credit card info during transmission by encrypting that info.</p>
+
+<p><strong>Shopstar Theme</strong>: From my fellow developers at OutTheBox, we purchased a premium e-commerce theme, ShopStar. After that, we made some slight modifications to match the theme to the brand.</p>
+:ET
