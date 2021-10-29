@@ -19,7 +19,7 @@
       <ul class="navbar-nav">
         {% for item in site.data.nav %}
         <li class="nav-item">
-          <a href="{{ item.link }}" {% if page.url == item.link %}
+          <a href="{{ item.link }}" {% if page.url==item.link %}
             class="nav-link active" {% else %} class="nav-link" {% endif %}">
             {{ item.name }} </a>
         </li>
@@ -28,4 +28,5 @@
     </div>
   </nav>
 </header>
-<p class="alert alert-info">Site is still under construction. Please pardon the inconvenience</p>
+<!-- <p class="alert alert-info">Site is still under construction. Please pardon the
+  inconvenience</p> -->
