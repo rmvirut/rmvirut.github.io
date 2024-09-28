@@ -1,17 +1,46 @@
 ---
-import { undefined } from "astro:schema";
+// import { undefined } from "astro:schema";
 
-export function getStaticPaths() {
-  return [
-    { params: { paths: "onoe/two/three" } },
-    { params: { paths: "four" } },
-    { params: { paths: undefined } },
-  ];
-}
+// export function getStaticPaths() {
+//   return [
+//     { params: { paths: "onoe/two/three" } },
+//     { params: { paths: "four" } },
+//     { params: { paths: undefined } },
+//   ];
+// }
 
-const { greetings, name } = Astro.props;
+// const { greetings, name } = Astro.props;
 ---
 
-<nav class="nav">
-  {greetings}, {name}
+<nav class="navbar sticky-top bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"> Kojo Acquah </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navmenu"
+      aria-controls="navmenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/porfolio">Porfolio</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>

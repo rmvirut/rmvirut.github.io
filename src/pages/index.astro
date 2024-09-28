@@ -6,10 +6,12 @@ import Navcard from "../components/navcard.astro";
 import Carousel from "../components/carousel.astro";
 import Contactme from "../components/contactme.astro";
 import Footer from "../components/footer.astro";
+const {
+  bootstrapcss = "../../node_modules/bootstrap/dist/css/bootstrap.min.css",
+  bootstrapjs = "../../node_modules/bootstrap/dist/js/bootstrap.min.js",
+} = Astro.props;
 ---
 
-<!-- Below is your "component template." It's just HTML, but with
-    some magic sprinkled in to help you build great templates. -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -17,13 +19,8 @@ import Footer from "../components/footer.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Kojo Acquah</title>
-    <link
-      rel="stylesheet"
-      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <script
-      is:inline
-      src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href={bootstrapcss} />
+    <script is:inline src={bootstrapjs}></script>
   </head>
   <body>
     <div class="container-fluid">

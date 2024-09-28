@@ -4,6 +4,10 @@ interface Props {
 }
 
 const { title = "I am Kojo Acquah" } = Astro.props;
+const {
+  bootstrapcss = "../../node_modules/bootstrap/dist/css/bootstrap.min.css",
+  bootstrapjs = "../../node_modules/bootstrap/dist/js/bootstrap.min.js",
+} = Astro.props;
 ---
 
 <head>
@@ -12,4 +16,6 @@ const { title = "I am Kojo Acquah" } = Astro.props;
   <meta name="viewport" content="width=device-width" />
   <meta name="generator" content={Astro.generator} />
   <title>{title}</title>
+  <link rel="stylesheet" href={bootstrapcss} />
+  <script is:inline src={bootstrapjs}></script>
 </head>
