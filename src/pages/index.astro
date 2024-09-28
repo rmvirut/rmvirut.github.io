@@ -2,6 +2,10 @@
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component frontmatter". It never runs in the browser.
 import Navbar from "../components/navbar.astro";
+import Navcard from "../components/navcard.astro";
+import Carousel from "../components/carousel.astro";
+import Contactme from "../components/contactme.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
@@ -22,29 +26,39 @@ import Navbar from "../components/navbar.astro";
       src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
       <header class="row">
-        <div class="col-4">
-          <img class="img img-fluid" src="https://placehold.co/400x600" />
+        <div class="col-sm-12 col-md-4">
+          <img class="img img-fluid" src="https://placehold.co/400x500" />
         </div>
         <div class="col">
+          <span class="display-5">Hi there, </span>
           <h1 class="display-1">I am Kojo Acquah</h1>
-          <h2 class="display-2">Technical Consultant, Business Analyst</h2>
-          <p class="display-6">Currently at Content Bloom</p><p>where "We help digitally maturing global companies tackle the needs and complexities of modern digital ecosystems and enterprise content lifecycle management."" </p>
+          <h2 class="display-5">Business IT Consultant</h2>
+          <p class="display-6">Currently at Content Bloom</p><p>
+            where We help digitally maturing global companies tackle the needs
+            and complexities of modern digital ecosystems and enterprise content
+            lifecycle management. <a href="#">Learn more</a>
+          </p>
         </div>
       </header>
-      <section class="row">
-        <div class="col">
-          <div class="card">Resume</div>
-        </div>
-        <div class="col">
-          <div class="card">Blog</div>
-        </div>
-
-        <div class="col">
-          <div class="card">Portfolio</div>
+      <section class="row text-center">
+        <div class="card-group">
+          <Navcard name="Resume" href="/resume" />
+          <Navcard name="Portfolio" href="/portfolio" />
+          <Navcard name="Blog" href="/blog" />
         </div>
       </section>
+      <section class="row text-center">
+        <h3 class="display-4">Client Feedback</h3>
+        <Carousel />
+      </section>
+      <section class="row">
+        <div class="col p-4">
+          <Contactme />
+        </div>
+      </section>
+      <Footer />
     </div>
   </body>
 </html>
