@@ -1,18 +1,55 @@
 ---
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component frontmatter". It never runs in the browser.
-console.log("This runs in your terminal, not the browser!");
+import Navbar from "../components/navbar.astro";
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
     some magic sprinkled in to help you build great templates. -->
-<html>
-    <body>
-        <h1>Hello, World!</h1>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Kojo Acquah</title>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script
+      is:inline
+      src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <header class="row">
+        <div class="col-4">
+          <img class="img img-fluid" src="https://placehold.co/400x600" />
+        </div>
+        <div class="col">
+          <h1 class="display-1">I am Kojo Acquah</h1>
+          <h2 class="display-2">Technical Consultant, Business Analyst</h2>
+          <p class="display-6">Currently at Content Bloom</p><p>where "We help digitally maturing global companies tackle the needs and complexities of modern digital ecosystems and enterprise content lifecycle management."" </p>
+        </div>
+      </header>
+      <section class="row">
+        <div class="col">
+          <div class="card">Resume</div>
+        </div>
+        <div class="col">
+          <div class="card">Blog</div>
+        </div>
+
+        <div class="col">
+          <div class="card">Portfolio</div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
 <style>
-    h1 {
-        color: orange;
-    }
+  h1 {
+    color: orange;
+  }
 </style>

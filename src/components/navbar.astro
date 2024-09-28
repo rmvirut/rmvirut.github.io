@@ -1,0 +1,17 @@
+---
+import { undefined } from "astro:schema";
+
+export function getStaticPaths() {
+  return [
+    { params: { paths: "onoe/two/three" } },
+    { params: { paths: "four" } },
+    { params: { paths: undefined } },
+  ];
+}
+
+const { greetings, name } = Astro.props;
+---
+
+<nav class="nav">
+  {greetings}, {name}
+</nav>
