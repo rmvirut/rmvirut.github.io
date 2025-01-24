@@ -8,24 +8,27 @@ import Testimonial from "../components/testimonials.astro";
 import ContactForm from "../components/contact_form.astro";
 import Head from "../components/base/head.astro";
 
-const {
-  bootstrapcss = "../../node_modules/bootstrap/dist/css/bootstrap.min.css",
-  bootstrapjs = "../../node_modules/bootstrap/dist/js/bootstrap.min.js",
-} = Astro.props;
+const { animate_css = "../../node_modules/animate.css/animate.min.css" } =
+  Astro.props;
 ---
 
 <html lang="en">
   <Head title="I am Kojo Acquah" />
   <body>
+    <link rel="stylesheet" href={animate_css} />
     <header class="container-fluid bg-light">
       <div class="row vh-100 justify-content-center">
-        <div class="col-auto align-content-center">
-          <span class="display-5">Hi, </span>
-          <h1 class="display-1">I'm Kojo Acquah</h1>
-          <h2 class="display-6">
-            a Business IT Consultant based in Nova Scotia
-          </h2>
-          <p class="fs-3">I maximize efficiency through technology</p>
+        <div class="col-11 col-md-8 align-content-center">
+          <div class="animate__animated animate__fadeInDown">
+            <h1 class="display-5">Hi,<br>
+            <span class="display-1">I'm Kojo Acquah</span></h1>
+            <h5 class="display-5">
+              a Business IT Consultant based in Nova Scotia
+            </h5>
+            <p class="fs-3">
+              I maximize business and process efficiency through technology
+            </p>
+          </div>
         </div>
       </div>
     </header>
@@ -41,7 +44,7 @@ const {
             class="img-fluid rounded mx-auto"
           />
         </div>
-        <div class="col alignt-content-middle">
+        <div class="col align-content-center">
           <p class="fs-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
             tortor lorem. Fusce aliquet tellus nisi, id luctus dolor mattis
@@ -107,5 +110,9 @@ const {
 <style>
   header {
     background-image: url();
+  }
+
+  .fade-in {
+    transition-timing-function: linear;
   }
 </style>

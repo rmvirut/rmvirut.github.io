@@ -19,6 +19,7 @@
     "@astrolib/seo": "^1.0.0-beta.6",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
+    "animate.css": "^4.1.1",
     "astro": "^4.15.9",
     "bootstrap": "^5.3.3",
     "react": "^18.3.1",
