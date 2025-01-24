@@ -3,12 +3,10 @@
 // is your "component frontmatter". It never runs in the browser.
 
 import Navcard from "../components/navcard.astro";
-import Carousel from "../components/carousel.astro";
-import Footer from "../components/base/footer.astro";
-import Header from "../components/base/header.astro";
 import Section from "../components/section.astro";
-import ColWrapper from "../components/wrappers/col_wrapper.astro";
+import Testimonial from "../components/testimonials.astro";
 import ContactForm from "../components/contact_form.astro";
+import Head from "../components/base/head.astro";
 
 const {
   bootstrapcss = "../../node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -17,35 +15,33 @@ const {
 ---
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Kojo Acquah</title>
-    <link rel="stylesheet" href={bootstrapcss} />
-    <script is:inline src={bootstrapjs}></script>
-  </head>
+  <Head title="I am Kojo Acquah" />
   <body>
-    <header>
+    <header class="container-fluid bg-light">
       <div class="row vh-100 justify-content-center">
         <div class="col-auto align-content-center">
-          <span class="display-5">Hi there, </span>
+          <span class="display-5">Hi, </span>
           <h1 class="display-1">I'm Kojo Acquah</h1>
-          <h2 class="display-6">and I am Business IT Consultant</h2>
+          <h2 class="display-6">
+            a Business IT Consultant based in Nova Scotia
+          </h2>
+          <p class="fs-3">I maximize efficiency through technology</p>
         </div>
       </div>
     </header>
     <main class="container-sm-fluid container">
-      <Section section_id="about_me" classes="row justify-content-center my-4">
+      <Section
+        title="About me"
+        section_id="about_me"
+        classes="row justify-content-center gap-2"
+      >
         <div class="col-auto">
           <img
-            src="https://placehold.co/400"
+            src="https://picsum.photos/300"
             class="img-fluid rounded mx-auto"
           />
         </div>
-        <div class="col">
-          <h2 class="display-2 text-center">About me</h2>
+        <div class="col alignt-content-middle">
           <p class="fs-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
             tortor lorem. Fusce aliquet tellus nisi, id luctus dolor mattis
@@ -61,14 +57,27 @@ const {
         </div>
       </Section>
       <!-- nav thumbnails -->
-      <Section title="Take a look at my" classes="row justify-content-center">
-        <ColWrapper>
-          <Navcard name="Portfolio" href="/portfolio" />
-        </ColWrapper>
-        <ColWrapper>
-          <Navcard name="Resume" href="/resume" />
-        </ColWrapper>
-        <ColWrapper> <Navcard name="Blog" href="/blog" /></ColWrapper>
+      <Section
+        title="Take a look at my"
+        classes="row justify-content-center gap-2"
+      >
+        <div class="col-5 col-md-3">
+          <Navcard
+            name="Portfolio"
+            href="/portfolio"
+            img="https://picsum.photos/300"
+          />
+        </div>
+        <div class="col-5 col-md-3">
+          <Navcard
+            name="Resume"
+            href="/resume"
+            img="https://picsum.photos/300"
+          />
+        </div>
+        <!-- <div class="col-5 col-md-3">
+          <Navcard name="Blog" href="/blog" img="https://picsum.photos/300" />
+        </div> -->
       </Section>
       <!-- testimonials -->
       <Section
@@ -77,8 +86,8 @@ const {
         title="Testimonials"
       >
         <div class="col-auto col-md-10 align-content-center">
-          <div style="height: 10em;">
-            <Carousel />
+          <div style="min-height: 8em;">
+            <Testimonial />
           </div>
         </div>
       </Section>
@@ -96,7 +105,7 @@ const {
   </body>
 </html>
 <style>
-  h1 {
-    color: orange;
+  header {
+    background-image: url();
   }
 </style>

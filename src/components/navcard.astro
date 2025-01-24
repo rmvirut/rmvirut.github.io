@@ -2,19 +2,21 @@
 interface Props {
   name: string;
   href?: string;
-  imgsrc?: string;
+  img?: string;
 }
 
 const {
   href = "#",
   name,
-  imgsrc = "https://placehold.co/600x600",
+  img: imgsrc = "https://placehold.co/600x600",
 } = Astro.props;
 ---
 
 <div class="card">
-  <img src={imgsrc} class="card-img" />
+  <img src={imgsrc} class="card-img opacity-75" />
   <div class="card-img-overlay text-center align-content-center">
-    <a href={href} class="card-title" style="text-decoration: none;"><h5 class="display-4">{name}</h5></a>
+    <a href={href} class="card-title" style="text-decoration: none;"
+      ><h5 class="display-5">{name}</h5></a
+    >
   </div>
 </div>
