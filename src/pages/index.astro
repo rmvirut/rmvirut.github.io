@@ -4,9 +4,12 @@
 
 import Navcard from "../components/navcard.astro";
 import Carousel from "../components/carousel.astro";
-import Contactme from "../components/contactme.astro";
 import Footer from "../components/base/footer.astro";
 import Header from "../components/base/header.astro";
+import Section from "../components/section.astro";
+import ColWrapper from "../components/wrappers/col_wrapper.astro";
+import ContactForm from "../components/contact_form.astro";
+
 const {
   bootstrapcss = "../../node_modules/bootstrap/dist/css/bootstrap.min.css",
   bootstrapjs = "../../node_modules/bootstrap/dist/js/bootstrap.min.js",
@@ -24,33 +27,71 @@ const {
     <script is:inline src={bootstrapjs}></script>
   </head>
   <body>
-    <Header
-      ><div class="row vh-100 justify-content-center">
+    <header>
+      <div class="row vh-100 justify-content-center">
         <div class="col-auto align-content-center">
           <span class="display-5">Hi there, </span>
           <h1 class="display-1">I'm Kojo Acquah</h1>
-          <h2 class="display-6">Business IT Consultant & Developer</h2>
+          <h2 class="display-6">and I am Business IT Consultant</h2>
         </div>
-      </div></Header
-    >
-    <main class="container-fluid">
-      <section class="row text-center">
-        <div class="card-group">
-          <Navcard name="Resume" href="/resume" />
+      </div>
+    </header>
+    <main class="container-sm-fluid container">
+      <Section section_id="about_me" classes="row justify-content-center my-4">
+        <div class="col-auto">
+          <img
+            src="https://placehold.co/400"
+            class="img-fluid rounded mx-auto"
+          />
+        </div>
+        <div class="col">
+          <h2 class="display-2 text-center">About me</h2>
+          <p class="fs-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
+            tortor lorem. Fusce aliquet tellus nisi, id luctus dolor mattis
+            quis. Vivamus porta ut urna vitae ultrices. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Nunc vel tortor lorem. Fusce
+            aliquet tellus nisi, id luctus dolor mattis quis. Vivamus porta ut
+            urna vitae ultrices.
+          </p><p class="fs-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
+            tortor lorem. Fusce aliquet tellus nisi, id luctus dolor mattis
+            quis. Vivamus porta ut urna vitae ultrices.
+          </p>
+        </div>
+      </Section>
+      <!-- nav thumbnails -->
+      <Section title="Take a look at my" classes="row justify-content-center">
+        <ColWrapper>
           <Navcard name="Portfolio" href="/portfolio" />
-          <Navcard name="Blog" href="/blog" />
+        </ColWrapper>
+        <ColWrapper>
+          <Navcard name="Resume" href="/resume" />
+        </ColWrapper>
+        <ColWrapper> <Navcard name="Blog" href="/blog" /></ColWrapper>
+      </Section>
+      <!-- testimonials -->
+      <Section
+        id="testimonials"
+        classes="row justify-content-center"
+        title="Testimonials"
+      >
+        <div class="col-auto col-md-10 align-content-center">
+          <div style="height: 10em;">
+            <Carousel />
+          </div>
         </div>
-      </section>
-      <section class="row text-center">
-        <h3 class="display-4">Client Feedback</h3>
-        <Carousel />
-      </section>
-      <section class="row">
-        <div class="col p-4">
-          <Contactme />
+      </Section>
+      <!-- contact form -->
+      <Section
+        id="contact_form"
+        classes="row my-3 justify-content-center"
+        title="Contact Me"
+      >
+        <div class="col col-md-8 fs-5">
+          <ContactForm />
         </div>
-      </section>
-      <Footer />
+      </Section>
     </main>
   </body>
 </html>

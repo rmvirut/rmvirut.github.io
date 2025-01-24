@@ -1,0 +1,13 @@
+---
+const { title, classes, section_id } = Astro.props;
+---
+
+<section id={section_id} class="py-2 my-3">
+  <h2 class="d-block text-center display-2 mb-3">{title}</h2>
+  <div class={classes}>
+    <slot>
+      <p>Hmmm, we couldn't load this content</p>
+      <slot />
+    </slot>
+  </div>
+</section>
