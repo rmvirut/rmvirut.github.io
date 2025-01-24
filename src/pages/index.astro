@@ -1,11 +1,12 @@
 ---
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component frontmatter". It never runs in the browser.
-import Navbar from "../components/navbar.astro";
+
 import Navcard from "../components/navcard.astro";
 import Carousel from "../components/carousel.astro";
 import Contactme from "../components/contactme.astro";
-import Footer from "../components/footer.astro";
+import Footer from "../components/base/footer.astro";
+import Header from "../components/base/header.astro";
 const {
   bootstrapcss = "../../node_modules/bootstrap/dist/css/bootstrap.min.css",
   bootstrapjs = "../../node_modules/bootstrap/dist/js/bootstrap.min.js",
@@ -23,22 +24,16 @@ const {
     <script is:inline src={bootstrapjs}></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <header class="row">
-        <div class="col-sm-12 col-md-4">
-          <img class="img img-fluid" src="https://placehold.co/400x500" />
-        </div>
-        <div class="col">
+    <Header
+      ><div class="row vh-100 justify-content-center">
+        <div class="col-auto align-content-center">
           <span class="display-5">Hi there, </span>
-          <h1 class="display-1">I am Kojo Acquah</h1>
-          <h2 class="display-5">Business IT Consultant</h2>
-          <p class="display-6">Currently at Content Bloom</p><p>
-            where We help digitally maturing global companies tackle the needs
-            and complexities of modern digital ecosystems and enterprise content
-            lifecycle management. <a href="#">Learn more</a>
-          </p>
+          <h1 class="display-1">I'm Kojo Acquah</h1>
+          <h2 class="display-6">Business IT Consultant & Developer</h2>
         </div>
-      </header>
+      </div></Header
+    >
+    <main class="container-fluid">
       <section class="row text-center">
         <div class="card-group">
           <Navcard name="Resume" href="/resume" />
@@ -56,7 +51,7 @@ const {
         </div>
       </section>
       <Footer />
-    </div>
+    </main>
   </body>
 </html>
 <style>
