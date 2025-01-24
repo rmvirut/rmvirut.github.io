@@ -3,29 +3,35 @@
 ---
 
 <!-- Control buttons -->
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+<div id="myBtnContainer" class="mb-3">
+  <button class="btn btn-primary" data-tag="all"> Show all</button>
+  <button class="btn btn-light" data-tag="cars"> Cars</button>
+  <button class="btn btn-light" data-tag="animals"> Animals</button>
+  <button class="btn btn-light" data-tag="fruits"> Fruits</button>
+  <button class="btn btn-light" data-tag="colors"> Colors</button>
 </div>
 
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-<div class="content_container">
-  <div class="filterDiv cars">BMW</div>
-  <div class="filterDiv colors fruits">Orange</div>
-  <div class="filterDiv cars">Volvo</div>
-  <div class="filterDiv colors">Red</div>
-  <div class="filterDiv cars">Ford</div>
-  <div class="filterDiv colors">Blue</div>
-  <div class="filterDiv animals">Cat</div>
-  <div class="filterDiv animals">Dog</div>
-  <div class="filterDiv fruits">Melon</div>
-  <div class="filterDiv fruits animals">Kiwi</div>
-  <div class="filterDiv fruits">Banana</div>
-  <div class="filterDiv fruits">Lemon</div>
-  <div class="filterDiv animals">Cow</div>
+<div class="container px-2 overflow-hidden">
+  <div class="row row-cols-2 row-cols-lg-3">
+    <div class="col filterDiv cars" data-tags="cars">BMW</div>
+    <div class="col filterDiv colors fruits" data-tags="colors fruits">
+      Orange
+    </div>
+    <div class="col filterDiv cars" data-tags="cars">Volvo</div>
+    <div class="col filterDiv colors" data-tags="colors">Red</div>
+    <div class="col filterDiv cars" data-tags="cars">Ford</div>
+    <div class="col filterDiv colors" data-tags="colors">Blue</div>
+    <div class="col filterDiv animals" data-tags="animals">Cat</div>
+    <div class="col filterDiv animals" data-tags="animals">Dog</div>
+    <div class="col filterDiv fruits" data-tags="fruits">Melon</div>
+    <div class="col filterDiv fruits animals" data-tags="fruits animals">
+      Kiwi
+    </div>
+    <div class="col filterDiv fruits" data-tags="fruits">Banana</div>
+    <div class="col filterDiv fruits" data-tags="fruits">Lemon</div>
+    <div class="col filterDiv animals" data-tags="animals">Cow</div>
+  </div>
 </div>
 
 <style>
@@ -34,13 +40,9 @@
   }
 
   .filterDiv {
-    float: left;
     background-color: #2196f3;
     color: #ffffff;
-    width: 100px;
-    line-height: 100px;
     text-align: center;
-    margin: 2px;
     display: none; /* Hidden by default */
   }
 
@@ -48,32 +50,8 @@
   .show {
     display: block;
   }
-
-  /* Style the buttons */
-
-  /* Add a light grey background on mouse-over */
-  .btn:hover {
-    background-color: #ddd;
-  }
-
-  /* Add a dark background to the active button */
-  .btn.active {
-    background-color: #666;
-    color: white;
-  }
 </style>
 <script>
-  function filterSelection(c) {
-    let x, i;
-    x = document.getElementsByClassName("filterDiv");
-    if (c == "all") c = "";
-    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-    for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-  }
-
   // Show filtered elements
   function w3AddClass(element, name) {
     let i, arr1, arr2;
@@ -101,14 +79,27 @@
 
   // Add active class to the current control button (highlight it)
   let btnContainer = document.getElementById("myBtnContainer");
-  let btns = btnContainer.getElementsByClassName("btn");
-  for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-      let current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
+  let tags = btnContainer.getElementsByClassName("btn");
+  for (let i = 0; i < tags.length; i++) {
+    tags[i].addEventListener("click", function () {
+      let current = document.getElementsByClassName("btn-primary");
+      current[0].className = "btn btn-light";
+      this.className = "btn btn-primary";
+      // get the selected tag
+      let tag = this.getAttribute("data-tag");
+
+      // filterSelection
+      let x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (tag == "all") tag = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(tag) > -1) w3AddClass(x[i], "show");
+      }
     });
   }
-
-  filterSelection("all");
+  //trigger the click event
+  let all_btn = document.querySelector("[data-tag=all]");
+  all_btn.dispatchEvent(new Event("click"));
 </script>
