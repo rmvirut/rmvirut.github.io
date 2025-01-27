@@ -1,7 +1,8 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: Test Item One
-slug: /portfolio/test_item_1
+slug: test_item_1
+cover: "../portfolio/images/image_new.jpg"
+subheading: Test
 description: Built a chrome extension to detect a website's underlying tech using the WhatCMS.org API
 ---
 

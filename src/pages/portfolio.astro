@@ -1,9 +1,17 @@
 ---
-import FilteredList from "../components/filteredList.astro";
+// import FilteredList from "../components/filteredList.astro";
+import { Image } from "astro:assets";
 import Section from "../components/section.astro";
 import BaseWrapper from "../components/wrappers/baseWrapper.astro";
 import { getCollection } from "astro:content";
-const portfolio = await getCollection("portfolio");
+export async function getStaticPaths() {
+  const portfolio = await getCollection("portfolio");
+  return portfolio.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+const portfolio = await getStaticPaths();
 ---
 
 <BaseWrapper>
@@ -22,7 +30,31 @@ const portfolio = await getCollection("portfolio");
       </ul> -->
       <div class="col">
         <div class="row gy-2 gx-2">
-            {portfolio.map((item)=><div class="col col-md-4"><a href="#"><div class="card"><img src="https://placehold.co/600x400" class="card-img" alt="..."><div class="card-img-overlay align-content-center text-center"><h3 class="card-title display-3 fs-3">{item.data.title}</h3></div></div></a></div>)}
+          {
+            portfolio.map((item) => (
+              <div class="col col-md-4">
+                <div class="card text-bg-dark rounded">
+                  <Image
+                    class="img-fluid opacity-50"
+                    src={item.props.post.data.cover}
+                    alt={`${item.props.post.data.title} cover image`}
+                  />
+                  {console.log(item.props.post.data.cover)}
+                  <div class="card-img-overlay align-content-center text-center">
+                    <h3 class="card-title display-3 fs-3">
+                      <a
+                        href={`/portfolio/${item.params.id}`}
+                        class="link-light"
+                        style="text-decoration: none;"
+                      >
+                        {item.props.post.data.title}
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
         </div>
       </div>
     </Section>

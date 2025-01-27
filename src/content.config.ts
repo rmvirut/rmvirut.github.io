@@ -12,10 +12,12 @@ const blog = defineCollection({
     title: z.string(),
   })
 });
+
 const portfolio = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "src/portfolio" }),
-  schema: z.object({
+  schema: ({image}) => z.object({
     title: z.string(),
+    cover: image(),
   })
 });
 
