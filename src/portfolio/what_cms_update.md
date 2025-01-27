@@ -1,0 +1,8 @@
+---
+layout: ../../layouts/BlogPost.astro
+title: What CMS Is It Part 2? Chrome Extensions
+slug: /portfolio/what_cms_is_it_extension_2
+description: Built a chrome extension to detect a website's underlying tech using the WhatCMS.org API
+---
+
+This is some content again

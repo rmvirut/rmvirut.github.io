@@ -2,26 +2,29 @@
 import FilteredList from "../components/filteredList.astro";
 import Section from "../components/section.astro";
 import BaseWrapper from "../components/wrappers/baseWrapper.astro";
-import { getCollection, getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 const portfolio = await getCollection("portfolio");
 ---
 
 <BaseWrapper>
-    <main class="container-fluid-sm container">
-        <h1 class="display-1 text-center">Portfolio</h1>
-        <Section classes="row justify-content-center">
-            <div class="col-12">
-                <p class="text-center fs-4">
-                    This page showcases some of my work over the year going as
-                    far back as 2020.
-                </p>
-            </div>
-            <!-- <ul>
-                {portfolio.map((item) => <li>{item.data.title}</li>)}
-            </ul> -->
-            <div class="col">
-                <FilteredList />
-            </div>
-        </Section>
-    </main>
+  <main class="container-fluid-sm container">
+    <h1 class="display-1 text-center">Portfolio</h1>
+    <Section classes="row justify-content-center">
+      <div class="col-12">
+        <p class="text-center fs-4">
+          This page showcases some of my work over the year going as far back as
+          2020.
+        </p>
+      </div>
+      <!-- { portfolio.toString() } -->
+      <!-- <ul>
+        {portfolio.map((item) => <li>{item.data.title }</li>)}
+      </ul> -->
+      <div class="col">
+        <div class="row gy-2 gx-2">
+            {portfolio.map((item)=><div class="col col-md-4"><a href="#"><div class="card"><img src="https://placehold.co/600x400" class="card-img" alt="..."><div class="card-img-overlay align-content-center text-center"><h3 class="card-title display-3 fs-3">{item.data.title}</h3></div></div></a></div>)}
+        </div>
+      </div>
+    </Section>
+  </main>
 </BaseWrapper>

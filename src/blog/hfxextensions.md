@@ -1,7 +1,8 @@
 ---
-title: In With The New, Welcome to HfxExtensions
-layout: post
-author: kojo
+layout: "../../../layouts/BlogPost.astro"
+title: "In With The New, Welcome to HfxExtensions"
+date: "10 November, 2024"
+author: "Kojo Acquah"
 category: [projects, case]
 industry: [Retail, Hair and Beauty]
 tags: [HTML, CSS, PHP, Wordpress, Woocommerce, E-Commmerce, Web Development, Paypal, RESTAPI]
