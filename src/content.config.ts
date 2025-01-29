@@ -26,9 +26,11 @@ const work_experience = defineCollection(
   {
     loader: glob({ pattern: "**/*.md", base: "src/data/resume/experience" }),
     schema: z.object({
+      sortOrder: z.number(),
       title: z.string(),
       employer: z.string(),
       start_date: z.string(),
+      end_date: z.string(),
       location: z.string()
     })
   }

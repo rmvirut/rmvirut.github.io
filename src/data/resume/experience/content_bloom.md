@@ -1,9 +1,9 @@
 ---
-sortOrder: 1
-title: "QA Analyst"
+sortOrder: 2
+title: Technical Business Consultant - L2
 employer: "Sobeys Inc."
 start_date: 10 October, 2020
-end_date: 10 October, 2021
+end_date: present
 location: Stellarton, NS
 ---
 

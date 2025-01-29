@@ -4,6 +4,9 @@
     "work_experience": {
       "type": "object",
       "properties": {
+        "sortOrder": {
+          "type": "number"
+        },
         "title": {
           "type": "string"
         },
@@ -11,6 +14,9 @@
           "type": "string"
         },
         "start_date": {
+          "type": "string"
+        },
+        "end_date": {
           "type": "string"
         },
         "location": {
@@ -21,9 +27,11 @@
         }
       },
       "required": [
+        "sortOrder",
         "title",
         "employer",
         "start_date",
+        "end_date",
         "location"
       ],
       "additionalProperties": false
