@@ -24,10 +24,6 @@ const portfolio = await getStaticPaths();
           2020.
         </p>
       </div>
-      <!-- { portfolio.toString() } -->
-      <!-- <ul>
-        {portfolio.map((item) => <li>{item.data.title }</li>)}
-      </ul> -->
       <div class="col">
         <div class="row gy-2 gx-2">
           {
@@ -39,7 +35,6 @@ const portfolio = await getStaticPaths();
                     src={item.props.post.data.cover}
                     alt={`${item.props.post.data.title} cover image`}
                   />
-                  {console.log(item.props.post.data.cover)}
                   <div class="card-img-overlay align-content-center text-center">
                     <h3 class="card-title display-3 fs-3">
                       <a

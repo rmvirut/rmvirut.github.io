@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const work_experience = await getCollection("work_experience");
+---
+
+<BaseLayout title="Resume">
+    <h1 class="display-1 text-center">Resume</h1>
+    <main class="row">
+        <section class="col-12 co-md-8">
+            <h2 class="display-2">Work Experience</h2>
+            <div class="row">
+                {work_experience.map((item) => <li>{item.data.title}</li>)}
+            </div>
+            <hr />
+            <h2 class="display-2">Education</h2>
+            <hr />
+        </section>
+        <aside class="d-sm-none d-md-block col-4">Test</aside>
+    </main>
+</BaseLayout>
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
+    }
+</style>

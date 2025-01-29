@@ -15,12 +15,24 @@ const blog = defineCollection({
 
 const portfolio = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "src/portfolio" }),
-  schema: ({image}) => z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     cover: image(),
   })
 });
 
 
+const work_experience = defineCollection(
+  {
+    loader: glob({ pattern: "**/*.md", base: "src/data/resume/experience" }),
+    schema: z.object({
+      title: z.string(),
+      employer: z.string(),
+      start_date: z.string(),
+      location: z.string()
+    })
+  }
+)
+
 // 4. Export a single `collections` object to register your collection(s)
-export const collections = { blog, portfolio }
+export const collections = { blog, portfolio, work_experience }
