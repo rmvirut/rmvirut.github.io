@@ -3,19 +3,37 @@ import { getCollection, render } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Experience from "../components/Experience.astro";
 import Education from "../components/Education.astro";
+import Nav from "../components/base/nav.astro";
 
 const work_experience = await getCollection("work_experience");
 const education = await getCollection("education");
 ---
 
 <BaseLayout title="Resume - Kojo Acquah">
+  <Nav />
   <h1 class="display-1 text-center">Resume</h1>
   <main class="container">
-    <section class="row justify-content-center">
+    <section class="row row-cols-1 justify-content-center">
+      <!-- start section Summary -->
+      <div class="col col-md-8 my-3 fs-5">
+        <p>
+          To give a quick summary, I'm Innovative Technical Analyst who
+          specialises in systems analysis, designed and implementation. This
+          combines well with my skills in full-stack development and digital
+          content lifecycle management.
+        </p>
+        <p>
+          I'm often recognized for use of strong problem-solving skills combined
+          with client-focused communication, and technical training
+          capabilities, to deliver high-impact digital projects for global
+          clients and support enterprise digital transformations.
+        </p>
+      </div>
+      <!-- end Summary -->
       <!-- start Experience -->
       <div class="col col-md-8 my-3">
         <h2 class="display-5">Work Experience</h2>
-        <hr />
+
         <div class="row row-cols-1 gx-3 gy-3 justify-content-center">
           {
             work_experience.map((post) => (
@@ -30,7 +48,7 @@ const education = await getCollection("education");
       <!-- start Education -->
       <div class="col col-md-8 my-3">
         <h2 class="display-5">Education</h2>
-        <hr />
+
         <div
           class="row gy-2 gx-2 flex-wrap justify-content-center align-items-stretch"
         >
@@ -53,13 +71,15 @@ const education = await getCollection("education");
             href="https://www.linkedin.com/in/kojoacquah/"
             target="_blank"
             class="btn btn-primary"
-            ><i class="fa-brands fa-linkedin"></i> <span class="d-md-none">LinkedIn</span></a
+            ><i class="fa-brands fa-linkedin"></i>
+            <span class="d-sm-none d-md-inline">LinkedIn</span></a
           >
           <a
             href="https://github.com/rmvirut"
             target="_blank"
             class="btn btn-secondary"
-            ><i class="fa-brands fa-github"></i> <span class="d-md-none">Github</span></a
+            ><i class="fa-brands fa-github"></i>
+            <span class="d-sm-none d-md-inline">Github</span></a
           >
         </div>
       </div>
