@@ -2,8 +2,8 @@
 sortOrder: 1
 title: "QA Analyst"
 employer: "Sobeys Inc."
-start_date: 10 October, 2020
-end_date: 10 October, 2021
+start_date: Oct, 2020
+end_date: Oct, 2021
 location: Stellarton, NS
 ---
 

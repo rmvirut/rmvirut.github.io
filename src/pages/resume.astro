@@ -1,37 +1,62 @@
 ---
-import { getCollection } from "astro:content";
-import { render } from "astro:content";
+import { getCollection, render } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Experience from "../components/Experience.astro";
+import Education from "../components/Education.astro";
 
 const work_experience = await getCollection("work_experience");
+const education = await getCollection("education");
 ---
 
-<BaseLayout title="Resume">
+<BaseLayout title="Resume - Kojo Acquah">
   <h1 class="display-1 text-center">Resume</h1>
-  <main class="row justify-content-center">
-    <section class="col-12 co-md-10">
-      <h2 class="display-2">Work Experience</h2>
-      <div class="row">
-        {
-          work_experience.map((item) => (
-            <div class="col-12 fs-5">
-              <div class="row">
-                <div class="col">
-                  <h3 class="fs-4 text-start">{item.data.title}</h3>
-                  <h5 class="text-start">{`${item.data.employer}, ${item.data.location}`}</h5>
-                </div>
-                <div class="col">{`${item.data.start_date} - ${item.data.end_date}`}</div>
-                <div class="col-12">{render(item)}</div>
+  <main class="container">
+    <section class="row justify-content-center">
+      <!-- start Experience -->
+      <div class="col col-md-8 my-3">
+        <h2 class="display-5">Work Experience</h2>
+        <hr />
+        <div class="row row-cols-1 gx-3 gy-3 justify-content-center">
+          {
+            work_experience.map((post) => (
+              <div class="col">
+                <Experience post={post} />
               </div>
-            </div>
-          ))
-        }
+            ))
+          }
+        </div>
       </div>
-      <hr />
-      <h2 class="display-2">Education</h2>
-      <hr />
+      <!-- end of Experience -->
+      <!-- start Education -->
+      <div class="col col-md-8 my-3">
+        <h2 class="display-5">Education</h2>
+        <hr />
+        <div
+          class="row gy-2 gx-2 flex-wrap justify-content-center align-items-stretch"
+        >
+          {
+            education.map((post) => (
+              <div class="col-sm-12 col-md-6">
+                <Education post={post} />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <!-- end Education -->
+      <!-- <aside class="d-sm-none d-md-block col-4">Test</aside> -->
     </section>
-    <aside class="d-sm-none d-md-block col-4">Test</aside>
+    <div class="position-fixed m-4 p-4">
+      <div class="position-fixed bottom-0 end-0">
+        <div class="vstack gap-2 m-4">
+          <a
+            href="https://www.linkedin.com/in/kojoacquah/"
+            target="_blank"
+            class="btn btn-primary"><i class="bi bi-linkedin"></i>LinkedIn</a
+          >
+        </div>
+      </div>
+    </div>
   </main>
 </BaseLayout>
 <style>

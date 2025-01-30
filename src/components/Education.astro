@@ -1,0 +1,19 @@
+---
+import { render } from "astro:content";
+
+const { post } = Astro.props;
+
+// const { Content } = await render(post);
+---
+
+<div class="card rounded">
+  <div class="card-body">
+    <h6 class="card-title">{post.data.degree}</h6>
+    <p class="text-start m-0">
+      {post.data.institution}<br />
+      <span class="text-secondary">{`${post.data.location}`}</span>
+      <br />
+      {`${post.data.start_date} - ${post.data.end_date}`}
+    </p>
+  </div>
+</div>

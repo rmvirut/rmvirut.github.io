@@ -1,0 +1,22 @@
+{
+    "education": [
+        {
+            "id": 1,
+            "start_date": "Sep, 2014",
+            "end_date": "May, 2019",
+            "institution": "Saint Mary's Univeristy",
+            "location": "Halifax, Nova Scotia",
+            "degree": "BSc. Computer Science",
+            "description": "Here's a paragraph"
+        },
+        {
+            "id": 2,
+            "start_date": "Sep, 2023",
+            "end_date": "Present",
+            "institution": "Nova Scotia Community College",
+            "location": "e-Campus",
+            "degree": "Business Adminstration - Diploma",
+            "description": "Here's another"
+        }
+    ]
+}

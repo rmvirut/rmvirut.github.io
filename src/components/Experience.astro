@@ -1,0 +1,26 @@
+---
+import { render } from "astro:content";
+
+const { post } = Astro.props;
+
+const { Content } = await render(post);
+---
+
+<div class="card rounded">
+  <div class="card-body">
+    <div class="row justify-content-center align-items-center gx-2 gy-2">
+      <div
+        class="col-12 col-md-4 text-bg-light p-3 align-content-center rounded"
+      >
+        <p class="text-start m-0">
+          <b>{post.data.title}</b><br />
+          {post.data.employer}<br />
+          {post.data.location}
+          <br />
+          {`${post.data.start_date} - ${post.data.end_date}`}
+        </p>
+      </div>
+      <div class="col-12 col-md-8"><Content /></div>
+    </div>
+  </div>
+</div>
