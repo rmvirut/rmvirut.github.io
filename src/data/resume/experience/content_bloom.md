@@ -1,11 +1,13 @@
 ---
-sortOrder: 2
-title: Technical/Business Consultant
-employer: "Sobeys Inc."
-start_date: Oct, 2020
-end_date: present
-location: Stellarton, NS
+sortOrder: 6
+title: Technical Consultant - AEM
+employer: Content Bloom Inc.
+start_date: Oct 2021
+end_date: May 2024
+location: Halifax, NS
 ---
-- Sole tester for Windows Enterprise image updates before company-wide rollout to over 100,000 systems
-- Conducted weekly testing on over 20 different retail systems including self-checkouts, gas pumps, network-attached scales, tills etc.
-- Managed and updated manual test cases and relevant documentation for all the aforementioned.
+-	Designed, rationalized, implemented and deliver over 900+ Adobe Designer forms on the Adobe Experience Manager Platform
+-	Strengthened stakeholder confidence by reviewing requirements and clarifying expectations
+-	Created automated unit testing tool that reduced development time time by 25%
+-	Received 100% satisfaction feedback from clients through effective communication skills and attention to detail. To paraphrase, “You always understand the heart of the requirements and not just what’s on paper”.
+-	Created a Sprint estimation tool in Excel that reduced missed deadlines by over 90% and improved client’s impression

@@ -1,6 +1,6 @@
 ---
-sortOrder: 1
-title: "QA Analyst"
+sortOrder: 5
+title: "Business Analyst (QA)"
 employer: "Sobeys Inc."
 start_date: Oct, 2020
 end_date: Oct, 2021
