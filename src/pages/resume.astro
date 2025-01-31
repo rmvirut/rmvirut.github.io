@@ -8,10 +8,13 @@ import Nav from "../components/base/nav.astro";
 const work_experience = await getCollection("work_experience");
 work_experience.sort((a, b) => a.data.sortOrder - b.data.sortOrder).reverse();
 const education = await getCollection("education");
+const { animate_css = "../../node_modules/animate.css/animate.min.css" } =
+  Astro.props;
 ---
 
 <BaseLayout title="Resume - Kojo Acquah">
   <Nav />
+  <link rel="stylesheet" href={animate_css} />
   <h1 class="display-1 text-center">Resume</h1>
   <main class="container">
     <section class="row row-cols-1 justify-content-center">

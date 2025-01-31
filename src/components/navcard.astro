@@ -12,12 +12,13 @@ const {
 } = Astro.props;
 ---
 
-<div class="card">
+<div class="card animate__animated animate__fadeIn">
   <img src={imgsrc} class="card-img opacity-100" />
   <div class="card-img-overlay text-center align-content-center">
-    <div class="text-bg-light p-2 rounded">
+    <div class="text-bg-light bg-opacity-75 p-2 rounded">
       <a href={href} class="card-title" style="text-decoration: none;"
-        ><h5 class="display-6">{name}</h5></a>
+        ><h5 class="display-6">{name}</h5></a
+      >
     </div>
   </div>
 </div>

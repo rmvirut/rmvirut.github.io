@@ -1,6 +1,6 @@
 ---
 sortOrder: 7
-title: Web Developer/Programmer
+title: Web Programmer
 employer: Content Bloom Inc.
 start_date: May 2024
 end_date: Feb 2025

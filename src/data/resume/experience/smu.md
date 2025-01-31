@@ -2,8 +2,8 @@
 sortOrder: 1
 title: L1 Helpdesk Support Stuff
 employer: Saint Mary’s University
-start_date: Aug, 2015
-end_date: Oct, 2018
+start_date: Aug 2015
+end_date: Oct 2018
 location: Halifax, NS
 ---
 - Assisted in supporting over 5000 students, faculty, and staff through trainings and onboardings
