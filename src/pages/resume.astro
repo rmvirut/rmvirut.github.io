@@ -6,6 +6,7 @@ import Education from "../components/Education.astro";
 import Nav from "../components/base/nav.astro";
 
 const work_experience = await getCollection("work_experience");
+work_experience.sort((a, b) => a.data.sortOrder - b.data.sortOrder).reverse();
 const education = await getCollection("education");
 ---
 
