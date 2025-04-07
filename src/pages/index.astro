@@ -8,6 +8,7 @@ import Testimonial from "../components/testimonials.astro";
 import ContactForm from "../components/contact_form.astro";
 import Head from "../components/base/head.astro";
 import Footer from "../components/base/footer.astro";
+import SiteNotice from "../components/SiteNotice.astro";
 
 const { animate_css = "../../node_modules/animate.css/animate.min.css" } =
   Astro.props;
@@ -15,10 +16,11 @@ const { animate_css = "../../node_modules/animate.css/animate.min.css" } =
 
 <html lang="en">
   <Head title="I am Kojo Acquah" />
-  <body class="container-fluid mx-0">
+  <body class="container-fluid px-0 mx-0">
     <link rel="stylesheet" href={animate_css} />
-    <header class="container-fluid bg-light px-0">
-      <div class="row vh-100 justify-content-center">
+    <SiteNotice />
+    <header class="row g-0 bg-light px-0 mx-0">
+      <div class="row mx-0 vh-100 justify-content-center">
         <div class="col-11 col-md-8 align-content-center">
           <div class="animate__animated animate__fadeInDown">
             <h5 class="display-5">Hi,</h5>
@@ -39,18 +41,24 @@ const { animate_css = "../../node_modules/animate.css/animate.min.css" } =
         section_id="about_me"
         classes="row justify-content-center gap-2"
       >
-        <div class="col-auto">
+        <div class="col-auto col-md-3">
           <img
-            src="https://picsum.photos/300"
+            src="/headshots/headshot-right.jpeg"
             class="img-fluid rounded mx-auto"
           />
         </div>
         <div class="col align-content-center fs-5">
           <p><strong>Husband, IT Consultant, Tutor</strong></p>
           <p>
-            Born and raised in Ghana, I have been a Canadian resident since 2014 and worked in many IT-related fields after completing my BSc in Computing Science degree. Currently based in New Glasgow, NS, I work full-time as a technical business consultant and moonlight as a Math & Science Tutor.
+            Born and raised in Ghana, I have been a Canadian resident since 2014
+            and worked in many IT-related fields after completing my BSc in
+            Computing Science degree. Currently based in New Glasgow, NS, I work
+            full-time as a technical business consultant and moonlight as a Math
+            & Science Tutor.
           </p><p class="fs-5">
-            Outside of work, I'm quite the technophile so my hobbies include gaming and fiddling with my homelab where I take interesting technologies for a test drive.
+            Outside of work, I'm quite the technophile so my hobbies include
+            gaming and fiddling with my homelab where I take interesting
+            technologies for a test drive.
           </p><p></p>
         </div>
       </Section>
@@ -67,14 +75,10 @@ const { animate_css = "../../node_modules/animate.css/animate.min.css" } =
           />
         </div>
         <div class="col-12 col-md col-lg-3">
-          <Navcard
-            name="Resume"
-            href="/resume"
-            img="/thumbnails/resume.png"
-          />
+          <Navcard name="Resume" href="/resume" img="/thumbnails/resume.png" />
         </div>
-        <div class="col-5 col-md-3">
-          <Navcard name="Blog (Coming Soon)" href="/blog" img="/thumbnails/blog.jpeg" />
+        <div class="col-12 col-md col-lg-3">
+          <Navcard name="Blog" href="/blog" img="/thumbnails/blog.jpeg" />
         </div>
       </Section>
       <!-- testimonials -->
@@ -95,15 +99,19 @@ const { animate_css = "../../node_modules/animate.css/animate.min.css" } =
         classes="row my-3 justify-content-center"
         title="Contact Me"
       >
-      <div class="col col-md-8 fs-5">
-        <p class="text-center">Got questions? Your queries are more than welcome. Please avoid including sensitive/confidential information when sending using this form.</p>
-      </div>
-        <div class="col col-md-8 fs-5">
+        <div class="col-12 col-md-8 fs-5">
+          <p class="text-center">
+            Got questions? Your queries are more than welcome. Please avoid
+            including sensitive/confidential information when sending using this
+            form.
+          </p>
+        </div>
+        <div class="col-12 col-md-8 fs-5">
           <ContactForm />
         </div>
       </Section>
     </main>
-  <Footer />
+    <Footer />
   </body>
 </html>
 <style>

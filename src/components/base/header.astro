@@ -1,8 +1,10 @@
 ---
+import SiteNotice from "../SiteNotice.astro";
 import Nav from "./nav.astro";
 ---
 
 <header class="container-fluid">
+  <SiteNotice />
   <Nav />
   <slot />
 </header>
