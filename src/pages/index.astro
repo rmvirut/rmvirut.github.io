@@ -7,6 +7,7 @@ import Section from "../components/section.astro";
 import Testimonial from "../components/testimonials.astro";
 import ContactForm from "../components/contact_form.astro";
 import Head from "../components/base/head.astro";
+import Footer from "../components/base/footer.astro";
 
 const { animate_css = "../../node_modules/animate.css/animate.min.css" } =
   Astro.props;
@@ -14,9 +15,9 @@ const { animate_css = "../../node_modules/animate.css/animate.min.css" } =
 
 <html lang="en">
   <Head title="I am Kojo Acquah" />
-  <body>
+  <body class="container-fluid mx-0">
     <link rel="stylesheet" href={animate_css} />
-    <header class="container-fluid bg-light">
+    <header class="container-fluid bg-light px-0">
       <div class="row vh-100 justify-content-center">
         <div class="col-11 col-md-8 align-content-center">
           <div class="animate__animated animate__fadeInDown">
@@ -44,19 +45,13 @@ const { animate_css = "../../node_modules/animate.css/animate.min.css" } =
             class="img-fluid rounded mx-auto"
           />
         </div>
-        <div class="col align-content-center">
-          <p class="fs-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
-            tortor lorem. Fusce aliquet tellus nisi, id luctus dolor mattis
-            quis. Vivamus porta ut urna vitae ultrices. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Nunc vel tortor lorem. Fusce
-            aliquet tellus nisi, id luctus dolor mattis quis. Vivamus porta ut
-            urna vitae ultrices.
+        <div class="col align-content-center fs-5">
+          <p><strong>Husband, IT Consultant, Tutor</strong></p>
+          <p>
+            Born and raised in Ghana, I have been a Canadian resident since 2014 and worked in many IT-related fields after completing my BSc in Computing Science degree. Currently based in New Glasgow, NS, I work full-time as a technical business consultant and moonlight as a Math & Science Tutor.
           </p><p class="fs-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel
-            tortor lorem. Fusce aliquet tellus nisi, id luctus dolor mattis
-            quis. Vivamus porta ut urna vitae ultrices.
-          </p>
+            Outside of work, I'm quite the technophile so my hobbies include gaming and fiddling with my homelab where I take interesting technologies for a test drive.
+          </p><p></p>
         </div>
       </Section>
       <!-- nav thumbnails -->
@@ -68,19 +63,19 @@ const { animate_css = "../../node_modules/animate.css/animate.min.css" } =
           <Navcard
             name="Portfolio"
             href="/portfolio"
-            img="https://picsum.photos/300"
+            img="/thumbnails/notepad-pen.jpg"
           />
         </div>
         <div class="col-12 col-md col-lg-3">
           <Navcard
             name="Resume"
             href="/resume"
-            img="https://picsum.photos/300"
+            img="/thumbnails/resume.png"
           />
         </div>
-        <!-- <div class="col-5 col-md-3">
-          <Navcard name="Blog" href="/blog" img="https://picsum.photos/300" />
-        </div> -->
+        <div class="col-5 col-md-3">
+          <Navcard name="Blog (Coming Soon)" href="/blog" img="/thumbnails/blog.jpeg" />
+        </div>
       </Section>
       <!-- testimonials -->
       <Section
@@ -100,11 +95,15 @@ const { animate_css = "../../node_modules/animate.css/animate.min.css" } =
         classes="row my-3 justify-content-center"
         title="Contact Me"
       >
+      <div class="col col-md-8 fs-5">
+        <p class="text-center">Got questions? Your queries are more than welcome. Please avoid including sensitive/confidential information when sending using this form.</p>
+      </div>
         <div class="col col-md-8 fs-5">
           <ContactForm />
         </div>
       </Section>
     </main>
+  <Footer />
   </body>
 </html>
 <style>
