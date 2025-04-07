@@ -1,0 +1,41 @@
+{
+  "$ref": "#/definitions/work_experience",
+  "definitions": {
+    "work_experience": {
+      "type": "object",
+      "properties": {
+        "sortOrder": {
+          "type": "number"
+        },
+        "title": {
+          "type": "string"
+        },
+        "employer": {
+          "type": "string"
+        },
+        "start_date": {
+          "type": "string"
+        },
+        "end_date": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sortOrder",
+        "title",
+        "employer",
+        "start_date",
+        "end_date",
+        "location"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

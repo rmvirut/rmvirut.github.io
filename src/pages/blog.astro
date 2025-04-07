@@ -1,0 +1,36 @@
+---
+// Welcome to Astro! Everything between these triple-dash code fences
+// is your "component frontmatter". It never runs in the browser.
+import Header from "../components/base/header.astro";
+import BaseWrapper from "../components/wrappers/baseWrapper.astro";
+import Section from "../components/section.astro";
+import Blogpostcard from "../components/blogpostcard.astro";
+import { getCollection } from "astro:content";
+import { propsToFilename } from "astro/assets/utils";
+const {
+  bootstrapcss = "../../node_modules/bootstrap/dist/css/bootstrap.min.css",
+  bootstrapjs = "../../node_modules/bootstrap/dist/js/bootstrap.min.js",
+  title = "Blog",
+} = Astro.props;
+
+const allBlogpost = await getCollection("blog");
+---
+
+<BaseWrapper>
+  <main class="container-fluid-sm container">
+    <h1 class="display-1 text-center">{title}</h1>
+    <Section classes="row justify-content-center">
+      <div class="col-12">
+        <p class="text-center fs-2">Coming soon</p>
+      </div>
+      <!-- <div class="col-12">
+        <div class="row">
+          <section class="col-8">
+            {allBlogpost.map((post) => <li>{post}</li>)}
+          </section>
+          <aside class="col-4"></aside>
+        </div>
+      </div> -->
+    </Section>
+  </main>
+</BaseWrapper>

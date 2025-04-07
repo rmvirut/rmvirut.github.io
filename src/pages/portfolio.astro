@@ -1,0 +1,57 @@
+---
+// import FilteredList from "../components/filteredList.astro";
+import { Image } from "astro:assets";
+import Section from "../components/section.astro";
+import BaseWrapper from "../components/wrappers/baseWrapper.astro";
+import { getCollection } from "astro:content";
+export async function getStaticPaths() {
+  const portfolio = await getCollection("portfolio");
+  return portfolio.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+const portfolio = await getStaticPaths();
+---
+
+<BaseWrapper>
+  <main class="container-fluid-sm container">
+    <h1 class="display-1 text-center">Portfolio</h1>
+    <Section classes="row justify-content-center">
+      <div class="col-12">
+        <p class="text-center fs-4">
+          This page showcases some of my work over the year going as far back as
+          2020.
+        </p>
+      </div>
+      <div class="col">
+        <div class="row gy-2 gx-2">
+          {
+            portfolio.map((item) => (
+              <div class="col col-md-4">
+                <div class="card text-bg-dark rounded">
+                  <Image
+                    class="img-fluid opacity-50"
+                    src={item.props.post.data.cover}
+                    alt={`${item.props.post.data.title} cover image`}
+                  />
+                  <div class="card-img-overlay align-content-center text-center">
+                    <h3 class="card-title display-3 fs-3">
+                      <a
+                        href={`/portfolio/${item.params.id}`}
+                        class="link-light"
+                        style="text-decoration: none;"
+                      >
+                        {item.props.post.data.title}
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </Section>
+  </main>
+</BaseWrapper>

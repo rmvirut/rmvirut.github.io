@@ -1,0 +1,29 @@
+{
+  "name": "rmvirut.github.io",
+  "version": "1.0.0",
+  "description": "Welcome to my personal site. [Click here](https://rmvirut.github.io) to see it live on github pages\r =======\r Built with jekyll on ruby-on-rails",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.4.0",
+    "@astrojs/react": "latest",
+    "@astrojs/sitemap": "latest",
+    "@astrojs/vue": "^5.0.9",
+    "@sentry/astro": "^8.51.0",
+    "@spotlightjs/astro": "^2.4.2",
+    "animate.css": "^4.1.1",
+    "astro": "^5.6.1",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "rmvirut.github.io": "file:",
+    "typescript": "^5.6.2"
+  }
+}
