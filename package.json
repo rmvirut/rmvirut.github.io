@@ -13,17 +13,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@astrojs/cloudflare": "^12.4.0",
+    "@astrojs/cloudflare": "^14.1.6",
     "@astrojs/react": "latest",
     "@astrojs/sitemap": "latest",
-    "@astrojs/vue": "^5.0.9",
-    "@sentry/astro": "^8.51.0",
-    "@spotlightjs/astro": "^2.4.2",
+    "@astrojs/vue": "^7.0.1",
+    "@sentry/astro": "^10.68.0",
+    "@spotlightjs/astro": "^2.2.0",
     "animate.css": "^4.1.1",
-    "astro": "^5.6.1",
+    "astro": "^7.1.5",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "rmvirut.github.io": "file:",
     "typescript": "^5.6.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "esbuild@0.25.2": true,
+    "workerd@1.20260722.1": true,
+    "@sentry/cli@2.58.6": true
   }
 }
